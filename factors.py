@@ -13,8 +13,8 @@ def factorize(n):
         factors.append(n)
     return factors
 
-def process_file(file_path):
-    with open(file_path, 'r') as file:
+def process_file(factors_file):
+    with open(factors_file, 'r') as file:
         for line in file:
             n = int(line.strip())
             factors = factorize(n)
