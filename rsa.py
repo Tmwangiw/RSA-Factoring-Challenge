@@ -22,7 +22,7 @@ def factorize_rsa_number(n):
                 return p, q
 start_time = time.time()
 
-with open('rsa_file.txt', 'r') as f:
+with open('rsa_file', 'r') as f:
       for line in f:
           n = int(line.strip())
           p, q =factorize_rsa_number(n)
